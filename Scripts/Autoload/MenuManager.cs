@@ -1,4 +1,3 @@
-using System;
 
 internal partial class MenuManager : Node
 {
