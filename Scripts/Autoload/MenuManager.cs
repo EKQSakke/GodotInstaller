@@ -8,9 +8,13 @@ internal partial class MenuManager : Node
         CreateLayout();
     }
 
-    private static void CreateLayout()
+    private void CreateLayout()
     {
-         
+       var container = this.AddChildOfType<CenterContainer>();
+       container.AnchorsPreset = 8;
+       var vBox = container.AddChildOfType<VBoxContainer>();
+       var text = vBox.AddChildOfType<Label>();
+       text.Text = "Yolo";
     }
 
     private static void FetchData()
